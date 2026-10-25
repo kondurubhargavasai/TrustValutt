@@ -1,0 +1,219 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_01",
+      "name": "Elena Rostova",
+      "email": "admin@trustvault.io",
+      "passwordHash": "$2b$10$gDizVM0xRXUzoltSZY826eizMvYZhKutjfAjsrOrbgbskPUGmhqPO",
+      "role": "admin",
+      "department": "Global Security Operations",
+      "securityClearance": "Top Secret",
+      "status": "active",
+      "createdAt": "2026-09-25T05:20:07.116Z"
+    },
+    {
+      "id": "usr_sec_02",
+      "name": "Marcus Vance",
+      "email": "security@trustvault.io",
+      "passwordHash": "$2b$10$gDizVM0xRXUzoltSZY826eTcEhogOlC9fDEzfb5UCECV9E92Ao.ES",
+      "role": "security_officer",
+      "department": "Threat & Incident Response",
+      "securityClearance": "Top Secret",
+      "status": "active",
+      "createdAt": "2026-09-30T05:20:07.116Z"
+    },
+    {
+      "id": "usr_aud_03",
+      "name": "Sarah Chen",
+      "email": "auditor@trustvault.io",
+      "passwordHash": "$2b$10$gDizVM0xRXUzoltSZY826eG091y.38zk9feg3Ei7MqQmlSjmhHgny",
+      "role": "auditor",
+      "department": "Regulatory Compliance & Forensics",
+      "securityClearance": "Restricted",
+      "status": "active",
+      "createdAt": "2026-10-05T05:20:07.116Z"
+    },
+    {
+      "id": "usr_usr_04",
+      "name": "David Kim",
+      "email": "analyst@trustvault.io",
+      "passwordHash": "$2b$10$gDizVM0xRXUzoltSZY826ee15yOdF7WQHhDPv8yV8HgkyAqnjudxq",
+      "role": "user",
+      "department": "Financial Risk Intelligence",
+      "securityClearance": "Confidential",
+      "status": "active",
+      "createdAt": "2026-10-10T05:20:07.116Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc_tv_001",
+      "title": "Q3 Enterprise Financial Audit & Liquidity Ratios",
+      "filename": "Q3_Financial_Audit_Consolidated.pdf",
+      "fileSize": 4194304,
+      "mimeType": "application/pdf",
+      "classification": "Top Secret",
+      "status": "active",
+      "uploadedBy": "usr_admin_01",
+      "uploaderEmail": "admin@trustvault.io",
+      "sha256Hash": "a8b79c3f56e921d7b0451a9e88d726c84132bcfe519280d463e26462719ba0a1",
+      "encryptionAlgorithm": "AES-256-GCM (Zero-Trust Envelope)",
+      "accessCount": 14,
+      "createdAt": "2026-10-15T05:20:07.116Z",
+      "contentSnippet": "CONFIDENTIAL: Consolidated international asset distributions, off-shore custodial covenants, and risk-weighted capital adequacy metrics for Q3 review."
+    },
+    {
+      "id": "doc_tv_002",
+      "title": "Project Titan: Quantum-Resistant Encryption Spec",
+      "filename": "Project_Titan_Architecture_Specs.docx",
+      "fileSize": 2097152,
+      "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "classification": "Restricted",
+      "status": "active",
+      "uploadedBy": "usr_sec_02",
+      "uploaderEmail": "security@trustvault.io",
+      "sha256Hash": "3f92ba48e02d1877cb705291244ab91d0e461c28c899317b6d194514ba490192",
+      "encryptionAlgorithm": "ChaCha20-Poly1305 + Kyber-768",
+      "accessCount": 29,
+      "createdAt": "2026-10-19T05:20:07.116Z",
+      "contentSnippet": "TECHNICAL SPECIFICATION: Implementation blueprint for post-quantum lattice-based key exchange protocols across core API gateways."
+    },
+    {
+      "id": "doc_tv_003",
+      "title": "Critical Infrastructure Breach Contingency Playbook",
+      "filename": "Incident_Response_Playbook_v4.pdf",
+      "fileSize": 1572864,
+      "mimeType": "application/pdf",
+      "classification": "Confidential",
+      "status": "active",
+      "uploadedBy": "usr_sec_02",
+      "uploaderEmail": "security@trustvault.io",
+      "sha256Hash": "729b46ef01d84a3b7023ec581b90c74823a9d20c572a118f6d8924bce8193217",
+      "encryptionAlgorithm": "AES-256-GCM",
+      "accessCount": 8,
+      "createdAt": "2026-10-22T05:20:07.116Z",
+      "contentSnippet": "STANDARD OPERATING PROCEDURE: Immediate containment procedures, key rotation pipelines, and regulatory notification deadlines under ISO/IEC 27001."
+    },
+    {
+      "id": "doc_tv_004",
+      "title": "Revoked Compromised Credential Export (Batch #992)",
+      "filename": "Compromised_Access_Dump_Nov24.enc",
+      "fileSize": 819200,
+      "mimeType": "application/octet-stream",
+      "classification": "Restricted",
+      "status": "revoked",
+      "uploadedBy": "usr_sec_02",
+      "uploaderEmail": "security@trustvault.io",
+      "sha256Hash": "d31b0981e77f02a490ca9142ec71b80264197a0df27490f845a7c2937be41590",
+      "encryptionAlgorithm": "AES-256-GCM",
+      "revokedAt": "2026-10-24T05:20:07.116Z",
+      "revokedBy": "admin@trustvault.io",
+      "revocationReason": "Emergency security revocation: Stale key detected during anomaly analysis.",
+      "accessCount": 42,
+      "createdAt": "2026-10-20T05:20:07.116Z",
+      "contentSnippet": "[REVOKED BY SECURITY ADMIN] Access to this object has been terminated across all policy enforcement points."
+    }
+  ],
+  "auditChain": [
+    {
+      "blockIndex": 0,
+      "timestamp": "2026-10-25T05:20:07.117Z",
+      "action": "SYSTEM_GENESIS",
+      "actorId": "system_root",
+      "actorEmail": "system@trustvault.internal",
+      "actorRole": "admin",
+      "targetResource": "TrustVault_Root_Ledger",
+      "details": "Cryptographic tamper-evident audit ledger initialized with SHA-256 genesis block.",
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "blockHash": "281c14c144062fb81279b8f55b049fcffe9257fe2be56ce42c6af345a516f0ad"
+    },
+    {
+      "blockIndex": 1,
+      "timestamp": "2026-10-25T05:20:07.117Z",
+      "action": "USER_SEEDED",
+      "actorId": "system_root",
+      "actorEmail": "system@trustvault.internal",
+      "actorRole": "admin",
+      "targetResource": "usr_admin_01",
+      "details": "Seeded default Super Admin identity with Top Secret clearance.",
+      "prevHash": "281c14c144062fb81279b8f55b049fcffe9257fe2be56ce42c6af345a516f0ad",
+      "blockHash": "54e0591f59d701400461cb50465cb92d22e31787f9d443dc86e558b042a0335b"
+    },
+    {
+      "blockIndex": 2,
+      "timestamp": "2026-10-25T05:20:07.117Z",
+      "action": "DOCUMENT_ENCRYPTED",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@trustvault.io",
+      "actorRole": "admin",
+      "targetResource": "doc_tv_001",
+      "details": "Uploaded & encapsulated Q3_Financial_Audit_Consolidated.pdf with AES-256-GCM envelope.",
+      "prevHash": "54e0591f59d701400461cb50465cb92d22e31787f9d443dc86e558b042a0335b",
+      "blockHash": "0e32ab9ec5702d16a7b8f05ba8aefd4ba04ad87d2f066630e7b5a5369f2eec56"
+    },
+    {
+      "blockIndex": 3,
+      "timestamp": "2026-10-25T05:20:07.118Z",
+      "action": "DOCUMENT_ENCRYPTED",
+      "actorId": "usr_sec_02",
+      "actorEmail": "security@trustvault.io",
+      "actorRole": "security_officer",
+      "targetResource": "doc_tv_002",
+      "details": "Uploaded Project_Titan_Architecture_Specs.docx under Restricted classification policy.",
+      "prevHash": "0e32ab9ec5702d16a7b8f05ba8aefd4ba04ad87d2f066630e7b5a5369f2eec56",
+      "blockHash": "384afb3e439d97b0fd99f6b25235d6c31346d68c88502f1139f3dc30cff2f206"
+    },
+    {
+      "blockIndex": 4,
+      "timestamp": "2026-10-25T05:20:07.118Z",
+      "action": "INSTANT_REVOCATION",
+      "actorId": "usr_admin_01",
+      "actorEmail": "admin@trustvault.io",
+      "actorRole": "admin",
+      "targetResource": "doc_tv_004",
+      "details": "INSTANT REVOCATION TRIGGERED: Terminated all bearer token grants for Compromised_Access_Dump_Nov24.enc.",
+      "prevHash": "384afb3e439d97b0fd99f6b25235d6c31346d68c88502f1139f3dc30cff2f206",
+      "blockHash": "838735e952680a793d74b8e05d4fec2be61b0637473aa164978d318c09fe9c98"
+    },
+    {
+      "blockIndex": 5,
+      "timestamp": "2026-10-25T05:21:10.520Z",
+      "action": "INTEGRITY_CHECK_PASS",
+      "actorId": "system_verifier",
+      "actorEmail": "auditor@trustvault.io",
+      "actorRole": "auditor",
+      "targetResource": "Audit_Ledger",
+      "details": "Cryptographic chain verification passed across all 5 blocks.",
+      "prevHash": "838735e952680a793d74b8e05d4fec2be61b0637473aa164978d318c09fe9c98",
+      "blockHash": "72071c4c522a21170dc0ad1c87c8880b350a7a9e99e4bc2d18b6aa5289d9dcc8"
+    }
+  ],
+  "accessRequests": [
+    {
+      "id": "req_001",
+      "documentId": "doc_tv_001",
+      "documentTitle": "Q3 Enterprise Financial Audit & Liquidity Ratios",
+      "requestedBy": "usr_usr_04",
+      "requesterEmail": "analyst@trustvault.io",
+      "justification": "Quarterly compliance reconciliation report submission due Friday.",
+      "status": "pending",
+      "durationHours": 24,
+      "createdAt": "2026-10-25T01:20:07.116Z"
+    },
+    {
+      "id": "req_002",
+      "documentId": "doc_tv_002",
+      "documentTitle": "Project Titan: Quantum-Resistant Encryption Spec",
+      "requestedBy": "usr_aud_03",
+      "requesterEmail": "auditor@trustvault.io",
+      "justification": "External security framework adherence verification.",
+      "status": "approved",
+      "durationHours": 48,
+      "approvedBy": "admin@trustvault.io",
+      "approvedAt": "2026-10-24T05:20:07.116Z",
+      "expiresAt": "2026-10-26T05:20:07.116Z",
+      "createdAt": "2026-10-24T01:20:07.116Z"
+    }
+  ],
+  "emergencyLockdown": false
+}
